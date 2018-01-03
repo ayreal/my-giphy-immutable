@@ -1,4 +1,10 @@
-export default function(state = { giphies: [], favorites: [] }, action) {
+const initialState = {
+  user: { name: "Esmery", workPlace: "Flatiron School" },
+  giphies: [],
+  favorites: []
+};
+
+export default function(state = initialState, action) {
   switch (action.type) {
     case "ADD_GIPHIES":
       return { ...state, giphies: action.payload };
