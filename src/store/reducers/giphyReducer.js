@@ -1,5 +1,4 @@
 const initialState = {
-  user: { name: "Esmery", workPlace: "Flatiron School" },
   giphies: [],
   favorites: []
 };
